@@ -49,5 +49,5 @@ Inside the `scripts.js` file there are some predefined functions
 
 - You can change the theme of the terminal by moving the silder next to the clear button. But if you want to make permanent changes to your theme you can edit the `--hue` css variable inside the `styles.css` file. Make sure to put a number between `0` and `360`.
 
-  > [!WARNING]
-  > Setting the theme this way is just a workaround. Maybe in future versions you won't need to change the `styles.css` file.
+> [!WARNING]
+> Setting the theme this way is just a workaround. Maybe in future versions you won't need to change the `styles.css` file.
