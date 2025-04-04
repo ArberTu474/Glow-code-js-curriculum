@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+
+    <title>GLOW Code Console</title>
+  </head>
+  <body>
+    <div class="container">
+      <nav class="navbar">
+        <h1 class="logo">GLOW Code</h1>
+
+        <div class="actions">
+          <div>
+            <input
+              type="range"
+              name="slider"
+              id="slider"
+              min="0"
+              max="360"
+              value="0"
+            />
+          </div>
+          <button id="clearButton" class="btn clear">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="20"
+              height="20"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="3"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <line x1="18" y1="6" x2="6" y2="18"></line>
+              <line x1="6" y1="6" x2="18" y2="18"></line>
+            </svg>
+            Clear
+          </button>
+          <button id="runButton" class="btn run">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="20"
+              height="20"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="3"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <polyline points="4 17 10 11 4 5"></polyline>
+              <line x1="12" y1="19" x2="20" y2="19"></line>
+            </svg>
+            Run
+          </button>
+        </div>
+      </nav>
+      <pre id="terminal"></pre>
+    </div>
+    <script src="scripts.js"></script>
+    <script src="runExercise.js"></script>
+    <!-- Import Exercises -->
+    <script src="exercises/ex1.js"></script>
+    <script src="exercises/ex2.js"></script>
+  </body>
+</html>

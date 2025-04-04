@@ -1,0 +1,188 @@
+:root {
+  --clr-text-default: #cbd5e1;
+  --clr-text-light: #64748b;
+
+  /* --clr-background: #312e81;
+  --clr-background-light: #393696;
+  --clr-background-dark: #1e1b4b; */
+  --hue: 240;
+
+  --clr-background: hsl(var(--hue), 33%, 17%);
+  --clr-background-light: hsl(var(--hue), 44%, 10%);
+  --clr-background-light-2: hsl(var(--hue), 20%, 20%);
+  --clr-background-dark: hsl(var(--hue), 81%, 8%);
+
+  --clr-red: #e11d48;
+  --clr-blue: #2563eb;
+  --clr-green: #16a34a;
+  --clr-pink: #ec4899;
+}
+
+/* poppins-bold */
+@font-face {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 700;
+  font-stretch: 100%;
+  src: local('Poppins Bold'), local('Poppins-Bold'),
+    url(fonts/poppins-bold.woff2) format('woff2');
+}
+/* poppins-medium */
+@font-face {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 500;
+  font-stretch: 100%;
+  src: local('Poppins Medium'), local('Poppins-Medium'),
+    url(fonts/poppins-medium.woff2) format('woff2');
+}
+
+/* jetbrains-mono */
+@font-face {
+  font-family: JetBrains;
+  font-style: normal;
+  font-weight: 100 800;
+  font-stretch: 100%;
+  src: local('JetBrains Mono Regular'), local('JetBrainsMono-Regular'),
+    url(fonts/jetbrains-mono.woff2) format('woff2');
+}
+
+/* jetbrains-mono-italic */
+@font-face {
+  font-family: JetBrains;
+  font-style: italic;
+  font-weight: 100 800;
+  font-stretch: 100%;
+  src: local('JetBrains Mono Italic'), local('JetBrainsMono-Italic'),
+    url(fonts/jetbrains-mono-italic.woff2) format('woff2');
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Poppins, sans-serif;
+
+  font-size: 18px; /* See What value works best diffrent screen resolutions */
+}
+
+html {
+  height: 100vh;
+}
+
+body {
+  color: var(--clr-text-default);
+  background-color: var(--clr-background);
+  height: 100%;
+}
+
+button {
+  border: none;
+  cursor: pointer;
+  line-height: 1;
+  font-size: 1.2rem;
+}
+
+svg {
+  height: 1.3rem;
+  width: 1.3rem;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+
+  padding: 1.5rem;
+
+  height: 100%;
+}
+
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5em;
+
+  color: var(--clr-text-default);
+  background-color: var(--clr-background-light);
+
+  padding: 1rem;
+  border-radius: 0.75em;
+}
+
+.btn:hover {
+  opacity: 0.7;
+}
+
+.color-btn {
+  height: 1rem;
+  width: 1rem;
+  padding: 1.5rem;
+  border-radius: 0.75em;
+}
+
+.red {
+  background-color: var(--clr-red);
+}
+
+.blue {
+  background-color: var(--clr-blue);
+}
+
+.green {
+  background-color: var(--clr-green);
+}
+
+.pink {
+  background-color: var(--clr-pink);
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.colors {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.5em;
+
+  margin-right: 1em;
+}
+
+.actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1em;
+}
+
+#terminal {
+  font-family: JetBrains, sans-serif;
+  font-size: 1.3rem;
+
+  background-color: var(--clr-background-dark);
+
+  padding: 1rem;
+  height: 100%;
+  border-radius: 0.75rem;
+
+  overflow-y: scroll;
+}
+
+#terminal::-webkit-scrollbar {
+  width: 0.6vw;
+}
+
+#terminal::-webkit-scrollbar-thumb {
+  background-color: var(--clr-background-light-2);
+  border-radius: 99px;
+}
