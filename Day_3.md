@@ -3,7 +3,7 @@
 -	Understand what `functions` are in JavaScript.
 -	Learn how to `define` and `call` functions.
 -	Use functions to keep code `clean`, `organized`, and `reusable`
-## What Are Functions?
+## What are functions?
 ### Definition:
 A function is a block of code that performs a specific task. It is executed when `called` or `invoked`.
 ### We give an example from real-life to make an analogy
@@ -18,7 +18,7 @@ For example, if making tea is a function, it might include:
 -	Done!
 
 You don’t repeat the steps each time, you just say, `make tea`.
-## Syntax of a Function:
+## Syntax of a function:
 ```js
 function sayHello() {
   alert("Hello, Glow Coders!");
