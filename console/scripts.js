@@ -61,15 +61,13 @@ const exercises = document.querySelectorAll('.exercise')
 
 // Run when page loads
 window.addEventListener('DOMContentLoaded', () => {
+  
   const exerciseNumber = getCookie('exerciseNumber')
   const terminalHue = getCookie('terminalHue')
 
   setTerminalHue(terminalHue)
 
   exercises.forEach((exercise) => {
-    // exercises.forEach((btn) => {
-    //   btn.classList.remove('selected')
-    // })
 
     if (exercise.dataset.exercise === exerciseNumber) {
       exercise.classList.add('selected')
