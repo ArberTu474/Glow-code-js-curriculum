@@ -1,3 +1,7 @@
 function ex1() {
-  displayLn('Hello World')
+  displayLn('Exercise 1')
+
+  display('hello')
+  display('\n')
+  display('world!')
 }

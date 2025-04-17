@@ -4,6 +4,10 @@ function runExercise(exercise) {
   exercise()
 }
 
+const exerciseList = [ex1, ex2, ex3, ex4]
+
 runButton.addEventListener('click', () => {
-  runExercise(ex1)
+  const selectedExercise = getCookie('exerciseNumber')
+
+  runExercise(exerciseList[selectedExercise - 1])
 })

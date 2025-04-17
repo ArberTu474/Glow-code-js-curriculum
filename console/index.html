@@ -14,6 +14,7 @@
 
         <div class="actions">
           <div>
+            <p>Color:</p>
             <input
               type="range"
               name="slider"
@@ -59,12 +60,25 @@
           </button>
         </div>
       </nav>
-      <pre id="terminal"></pre>
+
+      <div class="main-container">
+        <div class="exercises-container">
+          <button class="btn exercise" data-exercise="1">Exercise 1</button>
+          <button class="btn exercise" data-exercise="2">Exercise 2</button>
+          <button class="btn exercise" data-exercise="3">Exercise 3</button>
+          <button class="btn exercise" data-exercise="4">Exercise 4</button>
+        </div>
+        <pre id="terminal"></pre>
+      </div>
     </div>
-    <script src="scripts.js"></script>
-    <script src="runExercise.js"></script>
     <!-- Import Exercises -->
     <script src="exercises/ex1.js"></script>
     <script src="exercises/ex2.js"></script>
+    <script src="exercises/ex3.js"></script>
+    <script src="exercises/ex4.js"></script>
+
+    <!-- Terminal scripts -->
+    <script src="scripts.js"></script>
+    <script src="runExercise.js"></script>
   </body>
 </html>
