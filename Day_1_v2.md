@@ -42,10 +42,19 @@
 ```js
 let name = "Ben";
 let age = 15;
-let favoriteColor = "blue"
+let favoriteColor = "blue";
 
-displayLn("Hello my name is", name, "and I am", age, "years old.\nMy favorite color is", favoriteColor)
+displayLn("Hello my name is", name, "and I am", age, "years old.\nMy favorite color is", favoriteColor);
 ```
+
+- **Extra _(Optional)_**
+  - You can teach the them about `Template Literal`, which is a type of string that makes it easier for you to embed variables into a string.
+  
+  - The solution with `Template Literal` would look something like this:
+
+  ```js
+  displayLn(`Hello my name is ${name} and I am  ${age} years old.\nMy favorite color is ${favoriteColor}`);
+  ```
 
 - Work with them to break up problems into smaller ones(Think like a programmer)
   - You can play a game where the girls give you instructions to do something, but the instructions should be short and very specific(like they are programming).
@@ -89,20 +98,20 @@ displayLn("Hello my name is", name, "and I am", age, "years old.\nMy favorite co
 let x = "red";
 let y = "blue";
 
-displayLn(x, y)
+displayLn(x, y);
 
 // Swapping 
-let temp = x
-x = y
+let temp = x;
+x = y;
 y = temp;
 
-displayLn(x, y)
+displayLn(x, y);
 
 ```
 Output:
 
-  ```sh
-  red blue
-  blue red
-  ```
+```sh
+red blue
+blue red
+```
 
