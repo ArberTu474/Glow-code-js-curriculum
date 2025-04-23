@@ -13,8 +13,8 @@ Loops let us `repeat a block of code ` multiple times without writing it again a
 - `while` loop
 - `for` loop
 ### Syntax and example
-**__While Loop__**
-The ```while``` loop is used when  **__ you don't know in advance __** how many times you want to repeat something: you just know you want to keep going **__ while__** a condition is true.
+## **__While Loop__**
+The ```while``` loop is used when  **__you don't know in advance__** how many times you want to repeat something: you just know you want to keep going **__while__** a condition is true.
 - We clarify that everything that goes inside the while loop will be executed as many times as the condition remains true 
 - The example below will repeat as long as the condition `count<0` is true.
 - Tell them to be careful to increase the value of the variable count otherwise the loop will run forever.
@@ -40,8 +40,8 @@ while (number<=20){
   number+=2
 }
 ```
-### **__For loop__**
-A ```for``` loop is used when **__ you know exactly how many times __** you want to repeat something.
+## **__For loop__**
+A ```for``` loop is used when **__you know exactly how many times__** you want to repeat something.
 ```js
 for (let i = 0; i < 5; i++) {
   displayLn("i is: ", i);
