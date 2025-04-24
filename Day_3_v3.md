@@ -121,3 +121,81 @@ displayLn(sum);
 ```
 - Do a little recap with about `for` loops and `while` loops and ask the girls to find the differences between them. 
 - Let them know that there is another tye of loop in javascript called `do while` that they can explore it later on their own. 
+
+- Functions
+- Explain to the girls that there is another way for us to organize our code and to make it more readable. 
+- At this stage the code that the girls are writing is pretty short and not so much complicated, but for other projects `functions` are a necessary thing.
+
+- Make a comparison between functions in Math and functions in programming. 
+- In Math we write a function like this: $f(x) = y$
+- Everything that a `function` does is that it takes 0 ore more inputs, makes some calculations and than it can give us an output.
+- In javascript a function looks like this:
+  ```js
+  function (/* parameters */) {
+    // function body
+  }
+  ```
+- We use function to split our code into smaller pieces so it is more readable, more maintainable and reusable. 
+- Explain to the girls that functions don't have to have parameters. An example would be a function that greets us. 
+
+  ```js
+  function greet() {
+    displayLn("Hello there");
+  }
+  ```
+- Being able to greet someone bu just running this function is great, but what if we want our function to be more specific and greet anyone if they know the name of the person.
+- Thats why we use parameters as input to our functions
+
+  ```js
+  function greet(name) {
+    displayLn("Hello there", name);
+  }
+  ```
+
+- After the girls understand that functions can have parameters explain to them that you should declare a function before you `call` it.
+- This is an example of the above code
+  ```js
+  function greet(name) {
+    displayLn("Hello there", name);
+  }
+
+  greet("Ana"); // This ia a function call
+  ```
+- Output:
+  ```sh
+  Hello there Ana
+  ```
+
+### Exercise 5 
+
+- Write a function that print `Hello World` a specific number of times. Use a parameter to specify how many times you want `Hello World` to be printed.
+- Gyve hints to the girls that they need to use a loop for this. Decide with them if a `for` loop or a `while` loop makes more sense. 
+
+### Exercise 5 Solution
+
+  ```js
+  function repeat(times) {
+    for (let i = 0; i < times; i ++) {
+      displayLn("Hello World");
+    }
+  }
+
+  repeat(6);
+  ```
+
+### Exercise 6
+
+Modify [Exercise 5](#exercise-5) take another parameter `name` and include that name to the greeting.
+
+### Exercise 6 Solution
+
+  ```js
+  function repeat(times, name) {
+    for (let i = 0; i < times; i ++) {
+      displayLn("Hello", name);
+    }
+  }
+
+  repeat(6, "Ben");
+  ```
+- So we can use multiple parameters in a function
