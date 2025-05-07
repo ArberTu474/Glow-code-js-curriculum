@@ -5,7 +5,7 @@
 - What is JS, and why we use it(Recap of the last camp).
 - What is a programming language
 
-- Introduce them to the core topics that they will learn about: variables, conditions and functions.
+- Introduce them to the core topics that they will learn about: variables, conditions, loops and functions.
 
 - Introduce them to their coding environment (GLOW Console)
 
