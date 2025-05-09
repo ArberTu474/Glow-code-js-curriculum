@@ -80,6 +80,10 @@ svg {
   width: 1.3rem;
 }
 
+.divider {
+  color: var(--clr-text-light);
+}
+
 .container {
   display: grid;
   grid-template-columns: 1fr;
@@ -106,7 +110,9 @@ svg {
 .exercises-container {
   display: flex;
   flex-direction: column;
-  gap: 1.5rem;
+  gap: 0.5rem;
+  overflow-y: auto;
+  width: 15rem;
 }
 
 .exercises-container button {
@@ -177,12 +183,14 @@ svg {
   overflow-y: auto;
 }
 
-#terminal::-webkit-scrollbar {
+#terminal::-webkit-scrollbar,
+.exercises-container::-webkit-scrollbar {
   width: 0.6vw;
   height: 0.6vw;
 }
 
-#terminal::-webkit-scrollbar-thumb {
+#terminal::-webkit-scrollbar-thumb,
+.exercises-container::-webkit-scrollbar-thumb {
   background-color: var(--clr-background-light-2);
   border-radius: 99px;
 }
