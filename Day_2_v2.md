@@ -51,7 +51,7 @@
 
 ### Exercise 1
 
-- Give them mathematical expression and them them to convert them to code. Save the result of the expression to a variable named `result`.
+- Give them mathematical expression and tell them to convert them to code. Save the result of the expression to a variable named `result`.
 - Example expressions:
 
   - $\Large\frac{5 + 7}{3}$
@@ -64,34 +64,33 @@
 
     > _Also explain to them that they can use a function to calculate the square root. Use `Math.sqrt()`_
 
-### Exercise 1 Solution 
-```js
+### Exercise 1 Solution
 
-let result1 = (5 + 7) / 3;
+```js
+let result1 = (5 + 7) / 3
 displayLn(result1)
 
-// -------------------------------------------------
+// --------------------------------------
 
-let result2 = 1 + ((5 + 7) / 3);
+let result2 = 1 + (5 + 7) / 3
 displayLn(result2)
 
-// -------------------------------------------------
+// --------------------------------------
 
 let result3 = 2 + ((3 + 1) * 5) ** 2
 displayLn(result3)
 
-// -------------------------------------------------
+// --------------------------------------
 
-let a = 2;
-let b = 4;
-let c = -3;
+let a = 2
+let b = 4
+let c = -3
 
 // Calculate D
-let D = b * b - 4 * a * c;
+let D = b * b - 4 * a * c
 
 let x1 = (-b + Math.sqrt(D)) / (2 * a)
 let x2 = (-b - Math.sqrt(D)) / (2 * a)
-
 ```
 
 - More on `arithmetic operators`
@@ -123,35 +122,40 @@ let x2 = (-b - Math.sqrt(D)) / (2 * a)
     7. `<` less than
     8. `<=` less than or equal to
 
-  - Make it very clear that all of these operators when used in expression return a `boolean` value that is, `true` or `valse`.
+  - Make it very clear that all of these operators when used in expression return a `boolean` value that is, `true` or `false`.
   - Some of these operators might be intuitive to understand, but make sure you explain the difference between `==` and `===`. This is an example:
 
     ```js
     // This code will print `true`
-    displayLn("5" == 5)
+    displayLn('5' == 5)
 
     // This code will print `false`
-    displayLn("5" === 5)
-    ``` 
+    displayLn('5' === 5)
+    ```
+
   - Also an operator that you might want to take some time to explain is the not equal `!=` and not equal value or not equal type `!==`
 
 - Tell them about `logical` operator
+
   - Mos common `logical` operators
     1. `&&` - and operator (both conditions should be `true`)
     2. `||` - or operator (one or both conditions can be `true`)
     3. `!` - not operator (inverts the value of the operation, from `true` to `false` and vice versa)
   - Make sure to give examples of `and` and `or` operators.
   - Use the console to test different conditions with the new operators.
-    ```js
-    displayLn(true && true);
-    displayLn(false && true);
 
-    displayLn(false || true);
-    displayLn(false || false);
-    
-    displayLn(!false);
+    ```js
+    displayLn(true && true)
+    displayLn(false && true)
+
+    displayLn(false || true)
+    displayLn(false || false)
+
+    displayLn(!false)
     ```
-    Output: 
+
+    Output:
+
     ```js
     true
     false
@@ -160,44 +164,47 @@ let x2 = (-b - Math.sqrt(D)) / (2 * a)
     true
     ```
 
+- Introduce the structure and why we use `if` statements.
 
-- Introduce the structure and why we use `if` statements. 
   - If statements are used to make decisions by executing different code based on whether a condition is `true` or `false`.
   - The syntax for an `if` statement:
     ```js
-      if (condition) {
-        // this block of code is executed if the condition is true
-      } else {
-        // this block of code is executed if the condition is false
-      }
+    if (condition) {
+      // this block of code is executed if the condition is true
+    } else {
+      // this block of code is executed if the condition is false
+    }
     ```
   - We use the reserved keyword `if`.
   - Inside the parentheses `( )` we place an expression that evaluates to a boolean value, either `true` or `false`
   - If the condition holds to `true` the first block of code (that is inside `{ }`) will be executed. If the condition is `not true` the second block of code, that is noted by the `else` keyword will the executed.
-  - Example exercise: 
+  - Example exercise:
+
     ```js
-    let isRaining = true;
+    let isRaining = true
 
     if (isRaining) {
-      displayLn("Make sure to take an umbrella today!");
+      displayLn('Make sure to take an umbrella today!')
     } else {
-      displayLn("Today is a sunny day!");
+      displayLn('Today is a sunny day!')
     }
     ```
-### Exercise 2 
-- Write a program that identifies if a person is eligible to vote.
+
+### Exercise 2
+
+- Write a program that identifies if a person is eligible to vote or not.
 - Print a message to the user if they can vote or not.
-- test your program with different values.
+- Test your program with different values.
 
 ### Exercise 2 solution
 
 ```js
-let age = 15;
+let age = 15
 
 if (age >= 18) {
-  displayLn("You can vote");
+  displayLn('You can vote')
 } else {
-  displayLn("You can vote");
+  displayLn('You can vote')
 }
 ```
 
@@ -205,44 +212,47 @@ if (age >= 18) {
 
   ```js
   if (condition1) {
-  //  block of code to be executed if condition1 is true
+    //  block of code to be executed if condition1 is true
   } else if (condition2) {
     //  block of code to be executed if the condition1 is false and condition2 is true
   } else {
     //  block of code to be executed if the condition1 is false and condition2 is false
   }
   ```
+
   - This is an example program that displays your grad based on the points taken in a test:
+
     ```js
-    let points = 85; 
+    let points = 85
 
     if (points >= 90) {
-      displayLn("Grade: A");
+      displayLn('Grade: A')
     } else if (points >= 80) {
-      displayLn("Grade: B");
+      displayLn('Grade: B')
     } else if (points >= 70) {
-      displayLn("Grade: C");
+      displayLn('Grade: C')
     } else if (points >= 60) {
-      displayLn("Grade: D");
+      displayLn('Grade: D')
     } else {
-      displayLn("Grade: F");
+      displayLn('Grade: F')
     }
     ```
-### Exercise 3 
+
+### Exercise 3
 
 - Write a program that prints a greeting based on the time of day. If time is less then `10`, print `Good morning`. If the time is less than `20`, print `Good day`, otherwise print "Good evening".
 
-### Exercise 3 solution 
+### Exercise 3 solution
 
 ```js
 if (time < 10) {
-  greeting = "Good morning";
+  greeting = 'Good morning'
 } else if (time < 20) {
-  greeting = "Good day";
+  greeting = 'Good day'
 } else {
-  greeting = "Good evening";
+  greeting = 'Good evening'
 }
 ```
 
 > [!TIP]
-> Make sure while completing the exercises to include the logical operators `&&` and `||`. You can change the exercises, but make sure to implement the concepts for `if else`, `if else, else if, else`.
+> Make sure while completing the exercises to include the logical operators `&&` and `||`. You can change the exercises, but make sure to implement the concepts for `if – else if – else`.
