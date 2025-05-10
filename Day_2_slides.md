@@ -50,8 +50,6 @@ x += 2
 
 Write expressions that are equivalent to the mathematical expressions given below.
 
-> _Also explain to them that they can use a function to calculate the square root. Use `Math.sqrt()`_
-
 - $\Large\frac{5 + 7}{3}$
 
 - $1 + \Large(\frac{5 + 7}{3})$

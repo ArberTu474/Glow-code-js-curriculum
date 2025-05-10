@@ -135,9 +135,7 @@ string
 
 ## 11 Exercise 1
 
-- Tell the girls to print a simple paragraph where they should describe a person. They should include in the description the persons `name`, `age` and their `favorite color`.
-- Tell them to use variables for the `name`, `age` and `favorite color` and display different descriptions just by changing the variables.
-- **Bonus:** If the paragraphs are to long you can tell them to use `\n`, which is an `escape character` that mimics the <kbd>Enter</kbd> key.
+Write a simple paragraph to describe a person. Make sure to include their name, age and favorite color.
 
 ## 12 Variable declaration and variable initialization
 
@@ -190,7 +188,4 @@ let age = 15
 
 ## 16 Exercise 2
 
-- Create a program that swaps the values of 2 variables and print them before and after swapping them.
-- Make sure not to code the solution right away. The girls should give ideas on how to solve this problem.
-- Some common analogies for this problem is swapping the liquids between to glasses of water, where you should use a third glass. Or the examples where you have two balls on your hands and you need a helper hand (a friend for example) to swap them.
-- **Bonus:** Tell them about comments. Comments don't effect how the program works they just clarify the function of our code. (You use `//` to write an inline comment)
+Create a program that swaps the values of 2 variables and print them before and after swapping them.

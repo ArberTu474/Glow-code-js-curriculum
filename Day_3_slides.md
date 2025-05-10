@@ -64,7 +64,7 @@ for (let i = 0; i < 7; i++) {
 
 ## 6 Exercise 1
 
-Use a for loop to print `Hello World` 10 times using a for loop.
+Use a for loop to print `Hello World` 10 times.
 
 ## 7 Exercise 2
 
@@ -91,11 +91,13 @@ while (i < 7) {
 
 ## 9 Exercise 3
 
-Now use a `while` loop to print all number between 5 and 10.
+Use a `while` loop to print all number between 5 and 10.
 
 ## 10 Exercise 4 (Optional)
 
 > If the girls seem confident with what they have learned and if you have time to spare, you can do this exercise.
+
+Write a program that prints the sum of all numbers between `1` and `200` that are `divisible by 4`
 
 ## 11 Functions
 
